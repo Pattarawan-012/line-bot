@@ -28,12 +28,12 @@ foreach ($request_json['events'] as $event)
 				 $reply_message =  "ตาย ".$result_json["new_death"] . "คน.";
 			}
 			
-			if("เส้นทางไปมหาลัย"==$text) ||("ไปมจธ"==$text) {
+			if("เส้นทางไปมหาลัย"==$text) {
 			 $reply_message = "https://goo.gl/maps/D2sFxAPfZdCfkvcRA";							
 			}
 			
 			
-			if("ความเป็นมามจธ"==$text) ||("ประวัติมจธ"==$text) ||("มจธ"==$text) {
+			if("ความเป็นมามจธ"==$text)  {
 			 $reply_message = "https://www.kmutt.ac.th/about-kmutt/history";							
 			}
 		
