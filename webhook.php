@@ -27,10 +27,19 @@ foreach ($request_json['events'] as $event)
                                 $result_json = json_decode($result, false);   // Decode JSON request
 				 $reply_message =  "ตาย ".$result_json["new_death"] . "คน.";
 			}
-			if("เส้นทางไปมหาลัย"==$text){
+			if("เส้นทางไปมหาลัย"==$text) ||("ไปมจธ"==$text) {
 			 $reply_message = "https://goo.gl/maps/D2sFxAPfZdCfkvcRA";							
 			}
-			if("ความเป็นมามจธ"==$text){
+			
+			if("ปีที่ก่อตั้งมหาวิทยาลัย"==$text) ||("ปีที่ก่อตัง"==$text) {
+			 $reply_message = "พ.ศ.2503";
+			}
+			
+			if("ปีนี้มหาลัยครบรอบกี่ปี"==$text) ||("ครบรอบ"==$text) {
+			 $reply_message = "61 ปี";
+			}
+			
+			if("ความเป็นมามจธ"==$text) ||("ประวัติมจธ"==$text) ||("มจธ"==$text) {
 			 $reply_message = "https://www.kmutt.ac.th/about-kmutt/history";							
 			}
 		
