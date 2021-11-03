@@ -27,8 +27,14 @@ foreach ($request_json['events'] as $event)
                                 $result_json = json_decode($result, false);   // Decode JSON request
 				 $reply_message =  "ตาย ".$result_json["new_death"] . "คน.";
 			}
-			
+			if("เส้นทางไปมหาลัย"==$text){
+			 $reply_message = "https://goo.gl/maps/D2sFxAPfZdCfkvcRA";							
+			}
+			if("ความเป็นมามจธ"==$text){
+			 $reply_message = "https://www.kmutt.ac.th/about-kmutt/history";							
+			}
 		
+			
 			
 		} else {
 			$reply_message = 'ฉันได้รับ "'.$event['message']['type'].'" ของคุณแล้ว!';
