@@ -27,6 +27,7 @@ foreach ($request_json['events'] as $event)
                                 $result_json = json_decode($result, false);   // Decode JSON request
 				 $reply_message =  "ตาย ".$result_json["new_death"] . "คน.";
 			}
+			
 			if("เส้นทางไปมหาลัย"==$text) ||("ไปมจธ"==$text) {
 			 $reply_message = "https://goo.gl/maps/D2sFxAPfZdCfkvcRA";							
 			}
