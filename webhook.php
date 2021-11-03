@@ -32,8 +32,27 @@ foreach ($request_json['events'] as $event)
 			 $reply_message = "https://goo.gl/maps/D2sFxAPfZdCfkvcRA";							
 			}
 			
+			if("ไปมจธ"==$text) {
+			 $reply_message = "https://goo.gl/maps/D2sFxAPfZdCfkvcRA";							
+			}
+			if("ไปมอบางมด"==$text) {
+			 $reply_message = "https://goo.gl/maps/D2sFxAPfZdCfkvcRA";							
+			}
+			if("มจธไปยังไง"==$text) {
+			 $reply_message = "https://goo.gl/maps/D2sFxAPfZdCfkvcRA";							
+			}
+			
 			
 			if("ความเป็นมามจธ"==$text)  {
+			 $reply_message = "https://www.kmutt.ac.th/about-kmutt/history";							
+			}
+			if("ประวัติมจธ"==$text)  {
+			 $reply_message = "https://www.kmutt.ac.th/about-kmutt/history";							
+			}
+			if("มจธ"==$text)  {
+			 $reply_message = "https://www.kmutt.ac.th/about-kmutt/history";							
+			}
+			if("เกี่ยวกับมจธ"==$text)  {
 			 $reply_message = "https://www.kmutt.ac.th/about-kmutt/history";							
 			}
 		
